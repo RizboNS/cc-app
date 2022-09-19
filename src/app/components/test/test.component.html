@@ -1,0 +1,15 @@
+<button (click)="runPDF()">Downlaod PDF</button>
+<div>
+  <label>Sample dinamic value</label>
+  <div>
+    <input type="text" [(ngModel)]="dynamicValue" />
+  </div>
+</div>
+<div id="test" #test style="padding: 20px">
+  <h1 style="border: solid black 2px">Test</h1>
+  <p>Testi P</p>
+  <p>{{ dynamicValue }}</p>
+  <footer>
+    <div>Test f</div>
+  </footer>
+</div>
